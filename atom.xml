@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Xurk</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-16T15:20:31.877Z</updated>
+  <updated>2021-10-17T14:12:05.254Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Xurk</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/10/16/CSS/"/>
     <id>http://example.com/2021/10/16/CSS/</id>
     <published>2021-10-16T15:20:16.000Z</published>
-    <updated>2021-10-16T15:20:31.877Z</updated>
+    <updated>2021-10-17T14:12:05.254Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-CSS介绍"><a href="#1-CSS介绍" class="headerlink" title="1. CSS介绍"></a>1. CSS介绍</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul><li>CSS 概述</li><li>CSS 语法</li><li>CSS 注释</li><li>CSS 数值与单位</li><li>CSS 样式类型</li></ul><hr><h2 id="CSS概述"><a href="#CSS概述" class="headerlink" title="CSS概述"></a>CSS概述</h2><blockquote><p>层叠样式表（英语：Cascading Style Sheets，简写 CSS），又称串样式列表、级联样式表、串接样式表、阶层式样式表，一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言，由 W3C 定义和维护。目前最新版本是 CSS2.1，为 W3C 的推荐标准。  </p></blockquote><hr><h2 id="CSS语法"><a href="#CSS语法" class="headerlink" title="CSS语法"></a>CSS语法</h2><p>CSS 的语法单元是样式，每个样式包含两部分内容：<code>选择器</code>和<code>声明</code>（或者称为规则）：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;                    // 选择器</span><br><span class="line">    <span class="attribute">color</span>: red;            // 属性：属性值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><h2 id="CSS注释"><a href="#CSS注释" class="headerlink" title="CSS注释"></a>CSS注释</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 一行注释 */</span></span><br><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">多行</span></span><br><span class="line"><span class="comment">注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><hr><h2 id="CSS数值与单位"><a href="#CSS数值与单位" class="headerlink" title="CSS数值与单位"></a>CSS数值与单位</h2><h4 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a>颜色值</h4><ol><li>英文命名颜色 <code>color: pink;</code></li><li>RGB颜色 <code>color: rgb(154, 32, 50%);</code></li><li>十六进制颜色 <code>color: #00eeff;</code></li></ol><h4 id="长度单位"><a href="#长度单位" class="headerlink" title="长度单位"></a>长度单位</h4><ol><li><code>px</code><br>IE无法调整那些使用px作为单位的字体的大小</li><li> <code>em</code><br>1em = 本元素给定字体的font-size值</li><li>百分比<code>%</code><br>120%即当前对象font-size的1.2倍</li></ol><hr><h2 id="CSS样式类型"><a href="#CSS样式类型" class="headerlink" title="CSS样式类型"></a>CSS样式类型</h2><ol><li>内联式</li><li>内嵌式</li><li>外链式</li></ol><h4 id="内联式-行内式"><a href="#内联式-行内式" class="headerlink" title="内联式/行内式"></a>内联式/行内式</h4><p>通过style属性来设置元素的样式<br><code>&lt;p style=“color:blue;”&gt;哈喽，要保持微笑哦。&lt;/p&gt;</code></p><ul><li>优点：十分灵活，书写方便，权重高（后面会提到）。</li><li>缺点：只能操作某一个标签，没有实现样式和结构相分离。</li></ul><h4 id="内嵌式-内部样式表"><a href="#内嵌式-内部样式表" class="headerlink" title="内嵌式/内部样式表"></a>内嵌式/内部样式表</h4><p>将 CSS 代码集中写在 HTML 文档的 head 头部标签中，并且用 style 标签定义。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    <span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:blue;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><ul><li>优点：可以通过一条语句操作多个标签或类。</li><li>缺点：只能控制一个页面，没有彻底实现样式和结构分离。</li></ul><h4 id="外链式-外部样式表"><a href="#外链式-外部样式表" class="headerlink" title="外链式/外部样式表"></a>外链式/外部样式表</h4><p>将所有的样式放在一个或多个以 .CSS 为扩展名的外部样式表文件中，通过 link 标签将外部样式表文件链接到 HTML 文档中。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;CSS文件的路径&quot;</span>  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li>优点：一个单独的 CSS 文件，多个 HTML 文件可以引用一个 CSS 样式表文件。HTML 代码和 CSS 代码分离,要写什么就在哪个文件去找，修改方便。</li></ul><p><code>内联式 &gt; 嵌入式 &gt; 外链式</code></p><p>#WEB/CSS</p>]]></content>
     
@@ -33,6 +33,10 @@
     
     
     
+    <category term="web" scheme="http://example.com/categories/web/"/>
+    
+    
+    <category term="red" scheme="http://example.com/tags/red/"/>
     
   </entry>
   
@@ -41,11 +45,15 @@
     <link href="http://example.com/2021/10/16/my-first-blog/"/>
     <id>http://example.com/2021/10/16/my-first-blog/</id>
     <published>2021-10-16T11:49:09.000Z</published>
-    <updated>2021-10-16T11:49:09.293Z</updated>
+    <updated>2021-10-17T14:17:45.070Z</updated>
     
     
     
     
+    <category term="web" scheme="http://example.com/categories/web/"/>
+    
+    
+    <category term="red" scheme="http://example.com/tags/red/"/>
     
   </entry>
   
@@ -54,7 +62,7 @@
     <link href="http://example.com/2021/10/16/hello-world/"/>
     <id>http://example.com/2021/10/16/hello-world/</id>
     <published>2021-10-16T11:36:50.192Z</published>
-    <updated>2021-10-16T11:36:50.193Z</updated>
+    <updated>2021-10-17T14:17:17.531Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -66,6 +74,10 @@
     
     
     
+    <category term="web" scheme="http://example.com/categories/web/"/>
+    
+    
+    <category term="red" scheme="http://example.com/tags/red/"/>
     
   </entry>
   
