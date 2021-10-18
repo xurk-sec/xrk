@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-17T14:12:05.254Z</updated>
+  <updated>2021-10-18T13:32:30.726Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>两步解决终端无法识别mysql命令问题</title>
+    <link href="http://example.com/2021/10/18/solveMysql/"/>
+    <id>http://example.com/2021/10/18/solveMysql/</id>
+    <published>2021-10-18T13:29:45.000Z</published>
+    <updated>2021-10-18T13:32:30.726Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="两步解决终端无法识别mysql命令的问题"><a href="#两步解决终端无法识别mysql命令的问题" class="headerlink" title="两步解决终端无法识别mysql命令的问题"></a>两步解决终端无法识别mysql命令的问题</h1><ol><li><p>打开finder（访达），快捷键<code>command+shift+G</code>，输入<code>~/.bash_profile</code>，前往。</p></li><li><p>双击打开文件<code>.bash_profile</code>，没有的话就新建（该文件为隐藏文件）。</p></li><li><p>文件内输入<code>export PATH=$PATH:/usr/local/mysql/bin</code>，保存，第一步结束。</p></li></ol><ol><li><p>打开finder（访达），快捷键<code>command+shift+G</code>，输入<code>~/.zshrc</code>，前往。</p></li><li><p>双击打开该文件（同为隐藏文件），没有就新建。</p></li><li><p>在~/.zshrc文件最后，增加一行： <code>source ~/.bash_profile</code>  即可实现 source ~/.bash_profile 始终生效。第二步结束。</p></li><li><p>重启终端输入<code>mysql -u root -p</code>即会要求你输入password了。</p></li></ol><ul><li>若仅完成了第一步，然后去终端输入<code>source ~/.bash_profile</code>（source:使该文件立即生效），之后也是可以识别mysql命令的，但仅仅单次有效，重启终端失效。</li></ul><ul><li>小贴士<ol><li>访达内快捷键<code>command + shift + .</code>显示所有隐藏文件</li><li>如何新建所需文件<ol><li><code>cd ~</code></li><li><code>touch .bash_profile</code>(完成在用户主目录下新建.bash_profile文件)</li><li><code>touch .zshrc</code>(完成在用户主目录下新建.zshrc文件)</li></ol></li></ol></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;两步解决终端无法识别mysql命令的问题&quot;&gt;&lt;a href=&quot;#两步解决终端无法识别mysql命令的问题&quot; class=&quot;headerlink&quot; title=&quot;两步解决终端无法识别mysql命令的问题&quot;&gt;&lt;/a&gt;两步解决终端无法识别mysql命令的问题&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="mysql" scheme="http://example.com/categories/mysql/"/>
+    
+    
+    <category term="blue" scheme="http://example.com/tags/blue/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS</title>
